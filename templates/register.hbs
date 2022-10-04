@@ -1,0 +1,109 @@
+<style>
+body{
+    background-size: cover ;
+	height: 100%;
+	background-image: url("https://kaboompics.com/cache/9/6/d/f/c/96dfca940b8cfad78d87caabd38787cc7e5622f2.jpeg");
+}
+.toggle-btn
+{
+	font-size: medium;
+    padding: 14px 17px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+    .form-box
+{
+    width:380px;
+	height:480px;
+	position:relative;
+	margin:2% auto;
+	background:rgba(0, 0, 0, 0.641);
+	padding:10px;
+    overflow: hidden;
+}
+.button-box
+{
+	width: 106px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px    #1207031f;
+	border-radius: 30px;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width: 316px;
+	transition:.5s;
+}
+.input-field
+{
+    color: white;
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid rgb(235, 224, 224);
+	outline:none;
+	background: transparent;
+   
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+.submit-btn
+{
+	width: 80%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #f7aa53;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+    margin-left: 65px;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 98px;
+	height: 100%;
+	background: #e48e2d;
+	border-radius: 30px;
+	transition: .5s;
+}
+</style>
+
+<div class="form-box">
+  <div class="button-box">
+    <div id="btn"></div>
+   
+    <button type='button' class='toggle-btn'>Register</button>
+  </div>
+
+  <form id="register" class="input-group-register" method="post">
+    <input type="text" class="input-field" name="firstName" placeholder="First Name" required />
+    <input type="text" class="input-field" name="lastName" placeholder="Last Name " required />
+    <input type="email" class="input-field" name="email" placeholder="Email Id" required />
+    <input
+      type="password"
+      class="input-field"
+	  name="password"
+      placeholder="Enter Password"
+      required
+    />
+    
+    <input type="checkbox" class="check-box" /><span style="color: rgba(255, 255, 255, 0.767);">I agree to the terms and conditions</span>
+    <button type="submit" class="submit-btn">Register</button>
+    <p style="color: rgba(255, 208, 99, 0.992); font-size:medium; margin-top:40px; margin-left:75px; font:bolder; ">Already Registered? <a href="/" style="text-decoration:none; color:rgb(164, 236, 212); "> Login here</a></p>
+  </form>
+</div>
